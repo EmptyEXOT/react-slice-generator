@@ -1,0 +1,29 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npm run clean && tsc --project tsconfig.json && npm run copy-files",
+    "copy-files": "copyfiles -u 2 src/templates/**/*.rsgt dist/src/templates/",
+    "clean": "trash dist/*"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "commander": "^12.0.0",
+    "figlet": "^1.7.0"
+  },
+  "devDependencies": {
+    "@commander-js/extra-typings": "^12.0.1",
+    "@types/figlet": "^1.5.8",
+    "nodemon": "^3.1.0",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.0-dev.20240325",
+    "webpack": "^5.91.0"
+  },
+  "name": "rsg",
+  "preferGlobal": true,
+  "bin": "./dist/src/index.js"
+}

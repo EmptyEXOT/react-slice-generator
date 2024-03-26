@@ -1,0 +1,26 @@
+import React, {FC, ReactNode} from 'react';
+import classNames from "classnames";
+import {useDispatch, useSelector} from "react-redux";
+import {<<name>>ErrorSelector, <<name>>LoadingSelector} from "../model/selectors";
+
+
+export interface <<Name>>Props {
+    children?: ReactNode
+    className?: string
+}
+
+export const <<Name>>: FC<<<Name>>Props> = ({
+                                 children,
+                                 className,
+                                 ...props,
+                             }) => {
+    const dispatch = useDispatch<any>()
+    const <<name>>Error = useSelector(<<name>>ErrorSelector);
+    const <<name>>Loading = useSelector(<<name>>LoadingSelector);
+
+    return (
+        <div className={classNames(className, '')}>
+            
+        </div>
+    );
+};

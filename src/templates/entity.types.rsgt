@@ -1,0 +1,9 @@
+export interface <<Name>>Model {
+    error: <<Name>>Error | null,
+    isLoading: boolean,
+}
+
+export interface <<Name>>Error {
+    statusCode: number,
+    message: string,
+}

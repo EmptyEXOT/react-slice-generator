@@ -1,0 +1,4 @@
+import {StateSchema} from "@/shared/store/types";
+
+export const <<name>>ErrorSelector = (state: StateSchema) => state.errors
+export const <<name>>LoadingSelector = (state: StateSchema) => state.isLoading

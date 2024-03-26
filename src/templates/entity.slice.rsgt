@@ -1,0 +1,18 @@
+import {createSlice, PayloadAction} from "@reduxjs/toolkit";
+import {<<Name>>Model} from "./types";
+
+const initialState: <<Name>>Model = {
+    error: null,
+    isLoading: false,
+}
+
+const <<name>>Slice = createSlice({
+    name: '<<name>>',
+    initialState,
+    reducers: {
+
+    },
+})
+
+export const {actions: <<name>>Actions} = <<name>>Slice
+export const {reducer: <<name>>Reducer} = <<name>>Slice
